@@ -23,15 +23,15 @@
             }
         }
 
+        public function consulta_simple($sql){
+            mysqli_query($this -> con, $sql);
+        }
+
         public function consulta_retorno($sql){
             $consulta = mysqli_query($this -> con, $sql);
             return $consulta;
         }
 
-        
-
     }
-
-    $mi_conexion = new Conexion();
 
 ?>

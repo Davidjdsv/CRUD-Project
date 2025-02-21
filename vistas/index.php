@@ -1,5 +1,6 @@
 <?php
-
+    include_once("../controladores/enrutador.php");
+    include_once("../controladores/ctr_personas.php");
 
 ?>
 
@@ -35,7 +36,7 @@
             }
 
             if ($enrutador -> validar_vista($cargar)) {
-                $enrutador -> cargarVista($cargar);
+                $enrutador -> cargar_vista($cargar);
             }
         ?>
         </section>

@@ -1,5 +1,4 @@
 <?php
-
     $controlador = new ControladorPersona();
     $resultado = $controlador -> index();
 ?>
@@ -29,6 +28,7 @@
                         <th>Apellidos</th>
                         <th>Usuario</th>
                         <th>Clave</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,7 +41,7 @@
                             echo "<td>" . $fila["apellidos"] ."</td>";
                             echo "<td>" . $fila["usuario"] ."</td>";
                             echo "<td>" . $fila["clave"] ."</td>";
-
+                            echo "<td> <a href='?cargar=ver&id=".$fila["id"]."'>Ver</a><a href='?cargar=editar&id=".$fila["id"]."'>Editar</a><a href='?cargar=eliminar&id=".$fila["id"]."'>Eliminar</a>";
                         }
                     ?>
                 </tbody>

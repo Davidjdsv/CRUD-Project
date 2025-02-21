@@ -10,11 +10,8 @@
         }
     
         public function index(){
-            $resultado = $this -> persona -> listar();//Todavía no se ha hecho la función listar.
-            return $this -> $resultado;
+            $resultado = $this -> persona -> listar();
+            return $resultado;
         }
     }
-
-
-    $persona = new Persona();
 ?>

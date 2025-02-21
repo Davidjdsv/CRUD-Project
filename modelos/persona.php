@@ -26,9 +26,13 @@
         }
 
         public function listar(){
-            $sql = "SELECT * FROM personas";
+            $sql = "SELECT * FROM personitas";
             $resultado = $this -> con -> consulta_retorno($sql);
             return $resultado;
+        }
+
+        public function eliminar(){
+            
         }
     }
 

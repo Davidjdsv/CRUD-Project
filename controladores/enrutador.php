@@ -9,24 +9,24 @@
             }
         }
 
-        public function cargarVista($vista){
-            echo "La vista a cargat es {$vista}";
+        public function cargar_vista($vista){
+            echo "La vista a cargar es {$vista}";
 
             switch($vista){
                 case "crear":
-                    include_once('vistas/' . $vista . '<br>');
+                    include_once "../vistas/{$vista}.php";
                     break;
                 case 'ver':
-                    include_once('vistas/' . $vista .'<br>');
+                    include_once "../vistas/{$vista}.php";
                     break;
                 case 'editar':
-                    include_once('vista' . $vista . '<br>');
+                    include_once "../vistas/{$vista}.php";
                     break;
                 case 'eliminar':
-                    include_once('vistas/' . $vista . '<br>');
+                    include_once "../vistas/{$vista}.php";
                     break;
                 default:
-                        include_once('vistas/error404.php');
+                    include_once "../vistas/error404.php";
                 }
                 
 
