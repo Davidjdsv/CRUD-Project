@@ -28,11 +28,7 @@
             return $consulta;
         }
 
-        public function listar(){
-            $sql = "SELECT * FROM personas";
-            $resultado = $this -> con -> consulta_retorno($sql);
-            return $resultado;
-        }
+        
 
     }
 

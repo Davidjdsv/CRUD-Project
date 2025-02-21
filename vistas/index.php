@@ -22,26 +22,21 @@
 
     <main class="main-container">
         <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <td>Id</td>
-                        <td>Cedula</td>
-                        <td>Nombres</td>
-                        <td>Apellidos</td>
-                        <td>Usuario</td>
-                        <td>Clave</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
+            
         </div>
 
         <section>
         <?php
-            
+            $enrutador = new Enrutador();
+            if (isset($_GET["cargar"])){
+                $cargar = $_GET["cargar"];
+            } else {
+                $cargar = "";
+            }
+
+            if ($enrutador -> validar_vista($cargar)) {
+                $enrutador -> cargarVista($cargar);
+            }
         ?>
         </section>
 
