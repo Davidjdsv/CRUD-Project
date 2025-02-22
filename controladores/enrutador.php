@@ -13,7 +13,7 @@
             echo "La vista a cargar es {$vista}";
 
             switch($vista){
-                case "crear":
+                case 'crear':
                     include_once "../vistas/{$vista}.php";
                     break;
                 case 'ver':
