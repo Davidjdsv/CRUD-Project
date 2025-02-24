@@ -23,10 +23,12 @@
             }
         }
 
+        // Ejecuta consultas que no devuelven resultados, como INSERT, UPDATE o DELETE
         public function consulta_simple($sql){
             mysqli_query($this -> con, $sql);
         }
 
+        // Ejecuta consultas que devuelven resultados, como SELECT
         public function consulta_retorno($sql){
             $consulta = mysqli_query($this -> con, $sql);
             return $consulta;
