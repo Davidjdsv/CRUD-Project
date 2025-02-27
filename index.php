@@ -1,6 +1,6 @@
 <?php
-    include_once("../controladores/enrutador.php");
-    include_once("../controladores/ctr_personas.php");
+    include_once("controladores/enrutador.php");
+    include_once("controladores/ctr_personas.php");
 
 ?>
 

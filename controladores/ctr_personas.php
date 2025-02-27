@@ -1,6 +1,6 @@
 <?php
 
-    include_once("../modelos/persona.php");
+    include_once("modelos/persona.php");
 
     class ControladorPersona{
         private $persona;
