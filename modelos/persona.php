@@ -45,6 +45,20 @@
             return $reg;
         }
 
+        function crear(){
+            $sql2 = "SELECT * FROM personitas WHERE cedula = {$this -> cedula}";
+            $resultado = $this -> con -> consulta_retorno($sql2);
+            $filas = mysqli_num_rows($resultado);
+            
+            if($filas == 0){
+                $sql = "INSERT INTO personitas (cedula, nombres, apellidos, usuario, clave) VALUES ({$this -> cedula}, '{$this -> nombres}', '{$this -> apellidos}', '{$this -> usuario}', '{$this -> clave}')";
+                $this -> con -> consulta_simple($sql);
+                return true;
+            } else {
+                return false;
+            }
+        }
+
         public function eliminar(){
             
         }

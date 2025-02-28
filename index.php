@@ -11,22 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
     <title>CRUD</title>
 </head>
 <body>
-    <h1>CRUD</h1>
-    <h2>Página de inicio aprendiendo a desarrollar un crud con modelo, vista, controlador.</h2>
-    <nav>
-        <ul>
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="?cargar=crear">Registrar</a></li>
-        </ul>
-    </nav>
-
-    <main class="main-container">
-        <div class="table-container">
-            
-        </div>
+    <main class="main__container">
+            <nav class="navbar bg-dark border-bottom">
+                <h1>CRUD</h1>
+                <ul>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="?cargar=crear">Registrar</a></li>
+                </ul>
+            </nav>
+        
+        <h2>Página de inicio aprendiendo a desarrollar un crud con modelo, vista, controlador.</h2>
 
         <section>
         <?php

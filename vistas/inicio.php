@@ -18,15 +18,9 @@
     <title>Inicio</title>
 </head>
 <body>
-<main class="main-container">
-        <div class="table-container">
-            <h1>Tabla CRUD</h1>
-            <ul>
-                <li>Inicio</li>
-                <li>Registro</li>
-            </ul>
-            <table>
-                <thead>
+<main class="main__container table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table table-dark">
                     <tr>
                         <th>Id</th>
                         <th>Cedula</th>
@@ -53,7 +47,6 @@
                         
                 </tbody>
             </table>
-        </div>
         <!-- CDN BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
