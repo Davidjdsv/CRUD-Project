@@ -13,5 +13,10 @@
             $resultado = $this -> persona -> listar();
             return $resultado;
         }
+
+        public function ver($id){
+            $this -> persona -> set("id", $id);
+            return $this -> persona -> ver();
+        }
     }
 ?>
