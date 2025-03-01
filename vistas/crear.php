@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
                 <label for="clave">Clave</label>
                 <input class="form-control form-control-sm" type="text" name="clave" required id="clave">
             
-                <input class="btn btn-success mb-3 mt-3" type="submit" name="enviar" value="Registrar" id="btn-registrar">
+                <input class="btn btn-success mb-3 mt-3" type="submit" name="enviar" value="Registrar" id="input_registrar">
             </form>
         </div>
     </main>
@@ -50,5 +52,6 @@
         }
 
     ?>
+    <script src="js/script.js"></script>
 </body>
 </html>
