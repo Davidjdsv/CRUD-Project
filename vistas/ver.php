@@ -23,8 +23,8 @@
 <body>
     <main class="main__container">
         <div class="table__section">
-            <table>
-                <thead class="table table-striped">
+            <table class="table">
+                <thead class="table-dark">
                     <th>ID</th>
                     <th>Cedula</th>
                     <th>Nombre</th>

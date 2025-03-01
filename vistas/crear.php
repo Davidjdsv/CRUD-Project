@@ -7,33 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-center shadow p-3 mb-5 bg-body-tertiary rounded">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-</div>
+    <main class="container-fluid d-flex justify-content-between align-items-center shadow p-8 mb-5 bg-body-tertiary rounded">
+        <div class="container-fluid">
+            <img src="img/crud.webp" class="rounded float-start" alt="...">
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <form action="" method="post">
+                <label for="cedula">Cedula</label>
+                <input class="form-control form-control-sm" type="text" name="cedula" required id="cedula">
+            
+                <label for="nombres">Nombres</label>
+                <input class="form-control form-control-sm" type="text" name="nombres" required id="nombres">
+            
+                <label for="apellidos">Apellidos</label>
+                <input class="form-control form-control-sm" type="text" name="apellidos" required id="apellidos">
+            
+                <label for="usuario">Usuario</label>
+                <input class="form-control form-control-sm" type="text" name="usuario" required id="usuario">
+            
+                <label for="clave">Clave</label>
+                <input class="form-control form-control-sm" type="text" name="clave" required id="clave">
+            
+                <input class="btn btn-success mb-3 mt-3" type="submit" name="enviar" value="Registrar" id="btn-registrar">
+            </form>
+        </div>
+    </main>
     
-    <form action="" method="post">
-        <label for="cedula">Cedula</label>
-        <input class="form-control form-control-sm" type="text" name="cedula" required id="cedula">
-    
-        <label for="nombres">Nombres</label>
-        <input class="form-control form-control-sm" type="text" name="nombres" required id="nombres">
-    
-        <label for="apellidos">Apellidos</label>
-        <input class="form-control form-control-sm" type="text" name="apellidos" required id="apellidos">
-    
-        <label for="usuario">Usuario</label>
-        <input class="form-control form-control-sm" type="text" name="usuario" required id="usuario">
-    
-        <label for="clave">Clave</label>
-        <input class="form-control form-control-sm" type="text" name="clave" required id="clave">
-    
-        <input class="btn btn-success" type="submit" name="enviar" value="Registrar">
-    </form>
-    </div>
     
     <?php
 
