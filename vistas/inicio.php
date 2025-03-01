@@ -21,7 +21,7 @@
 </head>
 <body>
 <main class="main__container table-responsive">
-            <table id="myTable" class="table">
+            <table id="myTable" class="table table-hover">
                 <thead class="table-dark">
                     <tr>
                         <th>Id</th>

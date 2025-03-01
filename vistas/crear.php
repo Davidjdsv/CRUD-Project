@@ -11,7 +11,7 @@
 <body>
     <main class="container-fluid d-flex justify-content-between align-items-center shadow p-8 mb-5 bg-body-tertiary rounded">
         <div class="container-fluid">
-            <img src="img/crud.webp" class="rounded float-start" alt="...">
+            <img src="img/crud.webp" class="rounded float-start" alt="Imagen alusiva a un registro">
         </div>
 
         <div class="container-fluid d-flex justify-content-center align-items-center">
