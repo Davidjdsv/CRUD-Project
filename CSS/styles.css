@@ -34,3 +34,12 @@ li{
     flex-direction: column;
 }
 
+.crud-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--Blanco);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+

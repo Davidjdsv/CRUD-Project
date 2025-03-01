@@ -11,6 +11,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Datatable -->
+    <link rel="stylesheet" href="//cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
@@ -19,8 +21,8 @@
 </head>
 <body>
 <main class="main__container table-responsive">
-            <table class="table table-striped table-hover">
-                <thead class="table table-dark">
+            <table id="myTable" class="table">
+                <thead class="table-dark">
                     <tr>
                         <th>Id</th>
                         <th>Cedula</th>
@@ -49,5 +51,8 @@
             </table>
         <!-- CDN BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="scripts/jquery-3.7.1.min.js"></script>
+        <script src="//cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+        <script>let table = new DataTable('#myTable');</script>
 </body>
 </html>
