@@ -7,8 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-sm">
-    <h1>Estás en la sección de editar.</h1>
+    <div class="container-fluid d-flex justify-content-center shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
     
     <form action="" method="post">
         <label for="cedula">Cedula</label>

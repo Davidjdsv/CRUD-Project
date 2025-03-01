@@ -19,7 +19,7 @@
             if (mysqli_errno($this -> con)){
                 echo "Falló la conexión a la base de datos: {$this -> bd}";
             } else {
-                echo "Conexión exitosa a la base de datos: {$this -> bd}";
+                // echo "Conexión exitosa a la base de datos: {$this -> bd}";
             }
         }
 
