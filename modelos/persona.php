@@ -32,7 +32,7 @@
         }
 
         public function ver(){
-            $sql = "SELECT * FROM personitas WHERE {$this -> id}";
+            $sql = "SELECT * FROM personitas WHERE id = {$this -> id}";
             $resultado = $this -> con -> consulta_retorno($sql);
             $reg = mysqli_fetch_assoc($resultado);
 
@@ -60,7 +60,9 @@
         }
 
         public function eliminar(){
-            
+            $sql = "DELETE FROM personitas WHERE id = {$this -> id}";
+            echo $sql;
+            $this -> con -> consulta_simple($sql);
         }
     }
 

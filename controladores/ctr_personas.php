@@ -30,5 +30,10 @@
             return $resultado;
 
         }
+
+        public function eliminar($id){
+            $this -> persona -> set("id", $id);
+            $this -> persona -> eliminar();
+        }
     }
 ?>
