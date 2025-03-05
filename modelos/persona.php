@@ -61,8 +61,17 @@
 
         public function eliminar(){
             $sql = "DELETE FROM personitas WHERE id = {$this -> id}";
-            echo $sql;
+
             $this -> con -> consulta_simple($sql);
+        }
+
+        public function editar(){
+            $sql = "UPDATE personitas SET nombres = '{$this -> nombres}',
+                apellidos = '{$this -> apellidos}',
+                usuario = '{$this -> usuario}',
+                clave = '{$this -> clave}' WHERE id = {$this -> id}";
+            echo $sql;
+            $this -> con -> consulta_simple($sql); 
         }
     }
 

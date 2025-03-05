@@ -35,5 +35,14 @@
             $this -> persona -> set("id", $id);
             $this -> persona -> eliminar();
         }
+
+        public function editar($nombres, $apellidos, $usuario, $clave){
+            $this -> persona -> set("nombres", $nombres);
+            $this -> persona -> set("apellidos", $apellidos);
+            $this -> persona -> set("usuario", $usuario);
+            $this -> persona -> set("clave", $clave);
+
+            $this -> persona -> editar();
+        }
     }
 ?>
