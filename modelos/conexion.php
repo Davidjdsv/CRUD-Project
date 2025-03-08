@@ -2,11 +2,11 @@
 
     Class Conexion{
         // Atributos
-        private $host;
-        private $user;
-        private $pass;
-        private $bd;
-        private $con;
+        private $host; //El localhost
+        private $user; //Usuario del localhost que es "root"
+        private $pass; //Contraseña (por defecto sin contraseña)
+        private $bd; //La base de datos
+        private $con; //Conexión a la base de datos
 
         //Métodos
         public function __construct(){

@@ -10,7 +10,6 @@
 
     if (isset($_POST["editar"])){
         $controlador -> editar($_POST["nombres"],$_POST["apellidos"], $_POST["usuario"], $_POST["clave"]);
-        // echo $controlador;
         header("Location:index.php");
     }
 

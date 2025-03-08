@@ -1,7 +1,8 @@
 <?php
+    // Incluye el enrutador para según la opción que quiera ver el usuario, la muestre
     include_once("controladores/enrutador.php");
+    // Incluye el controlador para traer la lógica y que a la vez llama al modelo que maneja la bd
     include_once("controladores/ctr_personas.php");
-
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +32,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
+                    <!-- ?cargar es una variable en la etiqueta anchor que aqui vale crear -->
+                    <!-- Crear redirige a otra sección de la página -->
                     <li class="nav-item"><a class="nav-link" href="?cargar=crear">Registrar</a></li>
                 </ul>
             </div>
@@ -40,19 +43,27 @@
         <h1>Página de inicio aprendiendo a desarrollar un crud con modelo, vista, controlador.</h1>
         <hr class="my-4">
 
+        <!-- NOTA: EN ESTA ETIQUETA SECCIÓN ES DÓNDE SE AGREGAN/CARGAN LAS DEMAS VISTAS Y SE PONEN AQUÍ -->
+        <!-- POR LO TANTO, NO ES NECESARIO PONER EL HEADER Y BODY EN CADA VISTA. SOLO EN EL INDEX -->
+        <!-- TAMBIÉN EN EL INDEX SE PONEN LOS FRAMEWORKS, CSS, LIBRERIAS Y LO TOMARÁN EN LAS OTRAS SECCIONES DE LA PÁGINA-->
         <section>
-        <?php
-            $enrutador = new Enrutador();
-            if (isset($_GET["cargar"])){
-                $cargar = $_GET["cargar"];
-            } else {
-                $cargar = "";
-            }
+            <!-- Instancia el Enrutador en enrutador -->
+            <?php
+                $enrutador = new Enrutador();
+                // Pregunta si existe la variable cargar
+                if (isset($_GET["cargar"])){
+                    // Si si, carga según la vista
+                    $cargar = $_GET["cargar"];
+                } else {
+                    // Caso contrario no retorna nada
+                    $cargar = "";
+                }
 
-            if ($enrutador -> validar_vista($cargar)) {
-                $enrutador -> cargar_vista($cargar);
-            }
-        ?>
+                // Nos dirijimos al enrutador, validamos qué vista carga, seguidamente, cargamos según la vista a cargar
+                if ($enrutador -> validar_vista($cargar)) {
+                    $enrutador -> cargar_vista($cargar);
+                }
+            ?>
         </section>
 
     </main>
