@@ -55,7 +55,7 @@
                     // Si si, carga según la vista
                     $cargar = $_GET["cargar"];
                 } else {
-                    // Caso contrario no retorna nada
+                    // Si no, deja la variable vacía (mostrará la vista por defecto)
                     $cargar = "";
                 }
 
